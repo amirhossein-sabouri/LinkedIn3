@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.linkedin3.Controller.EditInfoPageController">
+   <children>
+      <HBox prefHeight="62.0" prefWidth="583.0" style="-fx-border-style: solid;">
+         <children>
+            <Label prefHeight="61.0" prefWidth="510.0" text="Edit intro">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="closeBTN" prefHeight="61.0" prefWidth="68.0" text="close" />
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="584.0" prefWidth="555.0" style="-fx-border-style: dotted;">
+         <children>
+            <Label layoutX="14.0" layoutY="34.0" text="First Name*">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutY="5.0" text="* indicated requiered" textFill="#867e7e" />
+            <TextField fx:id="firstName" layoutX="14.0" layoutY="54.0" prefHeight="26.0" prefWidth="274.0" />
+            <Label layoutX="14.0" layoutY="80.0" text="Last Name*">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="LastName" layoutX="14.0" layoutY="100.0" prefHeight="26.0" prefWidth="274.0" />
+            <Label layoutX="14.0" layoutY="126.0" text="Additional name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="AdditionalName" layoutX="14.0" layoutY="146.0" prefHeight="26.0" prefWidth="274.0" />
+            <Label layoutX="14.0" layoutY="183.0" text="Headlines">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="Headlines" layoutX="14.0" layoutY="205.0" prefHeight="124.0" prefWidth="274.0" style="-fx-border-style: dotted;" />
+            <Label layoutX="14.0" layoutY="341.0" text="Industry*">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="401.0" text="Education">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="435.0" text="School*">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="School" layoutX="17.0" layoutY="462.0" prefHeight="26.0" prefWidth="274.0" />
+            <ChoiceBox fx:id="Industry" layoutX="17.0" layoutY="376.0" prefHeight="26.0" prefWidth="274.0" />
+            <Label layoutX="307.0" layoutY="31.0" prefHeight="26.0" prefWidth="65.0" text="Location">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Country" layoutX="307.0" layoutY="100.0" prefHeight="26.0" prefWidth="234.0" />
+            <Label layoutX="307.0" layoutY="80.0" text="Country">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="307.0" layoutY="128.0" text="City">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="City" layoutX="307.0" layoutY="146.0" prefHeight="26.0" prefWidth="234.0" />
+            <JFXButton fx:id="saveBTN" layoutX="482.0" layoutY="530.0" prefHeight="33.0" prefWidth="50.0" style="-fx-border-radius: 20px; -fx-border-color: #000000;" text="Save " underline="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

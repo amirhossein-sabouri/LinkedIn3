@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="username" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.linkedin3.Controller.LoginPageController">
+   <children>
+      <TextField fx:id="emailField" layoutX="405.0" layoutY="198.0" prefHeight="26.0" prefWidth="268.0" />
+      <Label layoutX="403.0" layoutY="174.0" text="Email" textFill="#240eb7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="241.0" text="Password  " textFill="#280fcf">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="440.0" layoutY="28.0" prefHeight="130.0" prefWidth="215.0" text="Welcome to your professional community" textAlignment="CENTER" textFill="#5b30c2" wrapText="true">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="signinBut" layoutX="405.0" layoutY="319.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="268.0" style="-fx-background-color: PURPLE;" text="Sign in" textFill="#f4f4f4" />
+      <PasswordField fx:id="passField" layoutX="405.0" layoutY="276.0" prefHeight="26.0" prefWidth="268.0" />
+      <Button fx:id="joinBut" blendMode="COLOR_BURN" layoutX="515.0" layoutY="359.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="77.0" text="Join now" textFill="#0910e3" underline="true">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="405.0" layoutY="365.0" prefHeight="20.0" prefWidth="109.0" text="New to Linkedin?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="370.0" fitWidth="399.0" layoutX="2.0" layoutY="79.0">
+         <image>
+            <Image url="@../../../../Man.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0">
+         <image>
+            <Image url="@../../../../LinkedIn_Logo.svg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

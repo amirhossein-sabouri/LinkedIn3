@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXBadge?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="781.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.linkedin3.Controller.MainPageController">
+   <right>
+      <VBox prefHeight="702.0" prefWidth="152.0" style="-fx-background-color: #ECE0F8;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="60.0" prefWidth="222.0" text="Add to your feed">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></VBox>
+   </right>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="702.0" prefWidth="140.0" style="-fx-background-color: #D8D8D8;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="119.0" fitWidth="135.0">
+               <image>
+                  <Image url="@../../../smart-user-icon%20-%20Copy.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nameLBL" alignment="CENTER" prefHeight="26.0" prefWidth="132.0" text="Name">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label fx:id="UsernameLBL" alignment="CENTER" prefHeight="31.0" prefWidth="134.0" text="Username" textFill="#00000094">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="100.0">
+               <children>
+                  <ImageView>
+                     <image>
+                        <Image url="@../../../icons8-home-24.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="home" buttonType="RAISED" prefHeight="30.0" prefWidth="91.0" ripplerFill="#300be7" text="Home" textFill="#030303">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="119.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@../../../icons8-sms-48.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="messaging" alignment="CENTER" prefHeight="30.0" prefWidth="87.0" ripplerFill="#c73d22" text="Messaging" textFill="#030202">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="27.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../../../icons8-alert-32.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="notification" prefHeight="30.0" prefWidth="117.0" ripplerFill="#cf4d23" text="Notification" textFill="#0d0b0b">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="100.0">
+               <children>
+                  <JFXBadge />
+                  <ImageView fitHeight="31.0" fitWidth="32.0">
+                     <image>
+                        <Image url="@../../../icons8-person-48.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="profile" prefHeight="30.0" prefWidth="105.0" ripplerFill="#cc452f" text="Profile" textFill="#150101">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0">
+               <children>
+                  <JFXBadge />
+                  <ImageView fitHeight="28.0" fitWidth="32.0">
+                     <image>
+                        <Image url="@../../../icons8-job-seeker-48.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="jobs" prefHeight="30.0" prefWidth="102.0" ripplerFill="#c22821" text="Jobs">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="100.0">
+               <children>
+                  <JFXBadge />
+                  <ImageView fitHeight="31.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../../../icons8-collaboration-48.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="mynetwork" prefHeight="30.0" prefWidth="98.0" ripplerFill="#cc2d25" text="My Network" textFill="#1e0101">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></VBox>
+   </left>
+   <center>
+      <VBox fx:id="center" prefHeight="702.0" prefWidth="507.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="154.0" prefWidth="426.0">
+               <children>
+                  <JFXTextArea fx:id="postText" layoutX="103.0" layoutY="25.0" prefHeight="42.0" prefWidth="325.0" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust brightness="-1.0" contrast="0.04" hue="0.09" saturation="0.19" />
+                     </effect>
+                  </JFXTextArea>
+                  <JFXButton fx:id="postBTN" layoutX="245.0" layoutY="106.0" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #5882FA;" text="Post it" />
+               </children>
+            </AnchorPane>
+         </children></VBox>
+   </center>
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: #A9BCF5;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="searchField" layoutX="153.0" layoutY="24.0" prefHeight="38.0" prefWidth="201.0" promptText="Search your friends" />
+            <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="14.0" layoutY="14.0" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Linkedin-PNG-Picture.png" />
+               </image>
+            </ImageView>
+            <AmbientLight color="CHARTREUSE" layoutX="618.0" layoutY="40.0" />
+            <PointLight color="CHARTREUSE" layoutX="636.0" layoutY="39.0" lightOn="true" />
+            <ImageView fitHeight="37.0" fitWidth="50.0" layoutX="96.0" layoutY="26.0" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

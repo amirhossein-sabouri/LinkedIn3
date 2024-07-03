@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="username" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="520.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.linkedin3.Controller.LoginPageController">
+   <left>
+      <VBox prefHeight="520.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="230.0" text="Welcome to your" textFill="#5b30c2">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="230.0" text="professional community" textFill="#570eb5">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="230.0" text="Username" textFill="#b111c2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userField" prefHeight="29.0" prefWidth="230.0" />
+            <Label alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="230.0" text="Password  " textFill="#ae15d1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="passField" prefHeight="32.0" prefWidth="230.0" />
+            <Label fx:id="errorLBL" alignment="CENTER" prefHeight="88.0" prefWidth="230.0" text="Error" textFill="#ea1212">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="signinBut" buttonType="RAISED" prefHeight="13.0" prefWidth="278.0" ripplerFill="#4c0c71" style="-fx-background-color: #3e1154;" text="Sign in" textFill="#faf6fc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <HBox alignment="CENTER" prefHeight="145.0" prefWidth="230.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="108.0" text="New to Linkedin?">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="joinBut" prefHeight="26.0" prefWidth="81.0" ripplerFill="#81140e" text="join now" textFill="#191dcf" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="158.0">
+                     <image>
+                        <Image url="@../../../LinkedIn_Logo.svg.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ImageView fitHeight="462.0" fitWidth="430.0">
+               <image>
+                  <Image url="@../../../Man.png" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
